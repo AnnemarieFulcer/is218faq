@@ -10,7 +10,7 @@ class QuestionsTableSeeder extends Seeder
      * @return void
      */
     public function run()
-    {   /*retrieve all users, make one question for each user, associate a user with a qestion, save it*/
+    {
         $users = App\User::all();
         for ($i = 1; $i <= 16; $i++) {
             $users->each(function ($user) {
